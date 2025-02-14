@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    font-family: lora;
+}
+
+#main {
+    display: grid;
+    grid-template: 20rem 5rem auto auto / repeat(3, 1fr);
+    auto auto / repeat(3, 1fr);
+    background-color: white;
+    width: 30rem;
+    filter: drop-shadow(0 0.1rem 0.1rem rgba(20, 20, 20, 0.37));
+}
+
+#header {
+    width: 100%;
+    background-image: url("img/bgimg.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+
+#scorebox {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+}
+
+#headline {
+    padding-left: 3rem;
+    align-content: center;
+    background-color: white;
+    filter: drop-shadow(0 0.4rem 0.5rem rgba(20, 20, 20, 0.144));
+}
+
+.box {
+    grid-column: span 3;
+}
+
+
+#button {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.button>button {
+    width: 100%;
+    height: 5rem;
+    font-family: lora;
+    font-size: 0.9rem;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+#oneUpOneButton {
+    background-color: #646267;
+}
+
+#oneUpOneButton:hover {
+    background-color: #7d7a81;
+}
+
+#oneUpTwoButton {
+    background-color: #A77327;
+}
+
+#oneUpTwoButton:hover {
+    background-color: #c78b31;
+}
+
+#resetButton {
+    background-color: #2E2717;
+}
+
+#resetButton:hover {
+    background-color: #4e4328;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+
+#rounds {
+    border-radius: 1rem;
+    border-color: #2E2717;
+    border-style: solid;
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+
+h1 {
+    display: inline;
+    font-family: "Poiret One";
+    font-size: 2rem;
+    color: #2E2717;
+}
+
+label,
+select {
+    display: inline;
+}
+
+.score {
+    color: #646267;
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
